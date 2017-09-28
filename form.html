@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отзыв о «Sedona»</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-body">
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__list-item  main-navigation__list-item--now">
+              <a class="main-navigation__link" href="#">Форма отзыва<span class="main-navigation__link--active"></span></a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-button-block">
+          <button class="header-button" type="button">
+            Открыть меню
+          </button>
+          <button class="header-button-up" type="button">
+            Закрыть меню
+          </button>
+        </div>
+        <div class="main-header__logo">
+          
+        </div>
+        <div class="main-header__img">
+          
+        </div>
+      </header>
+      <main class="main-block">
+        <section class="page-brief-info">
+          <b class="page-brief-info__head">Оставьте свой отзыв</b>
+          <p class="page-brief-info__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </section>
+        <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="main-form-fieldset  main-form-introduce">
+            <legend class="main-form__head-fieldset">Представьтесь:</legend>
+            <label class="main-form__input-label" for="first-name-f">Имя*:</label>
+            <input type="text" name="first-name" id="first-name-f" placeholder="Петр">
+            <label class="main-form__input-label" for="surname-f">Фамилия*:</label>
+            <input type="text" name="surname" id="surname-f" placeholder="Иванов">
+            <label class="main-form__input-label" for="middle-name-f">Отчество*:</label>
+            <input type="text" name="middle-name" id="middle-name-f" placeholder="Александрович">
+          </fieldset>
+          <fieldset class="main-form-fieldset  main-form-contact-info">
+            <legend class="main-form__head-fieldset">Контактная информация:</legend>
+            <label class="main-form__input-label" for="tel-f">Контактный телефон*:</label>
+            <input type="tel" name="tel" id="tel-f" placeholder="Введите телефон">
+            <label class="main-form__input-label" for="email-f">Электронная почта*:</label>
+            <input type="email" name="email" id="email-f" placeholder="Введите email">
+          </fieldset>
+          <fieldset class="main-form-fieldset  main-form-total-exp">
+            <legend class="main-form__head-fieldset">Ваше общее впечатление:</legend>
+            <input type="radio" name="experience" id="experience-f-1" value="positive" checked>
+            <label class="main-form__input-label" for="experience-f-1">Скорее положительное</label>
+            <input type="radio" name="experience" id="experience-f-2" value="negative">
+            <label class="main-form__input-label" for="experience-f-2">Скорее отрицательное</label>
+            <input type="radio" name="experience" id="experience-f-3" value="neutral">
+            <label class="main-form__input-label" for="experience-f-3">Затрудняюсь ответить</label>
+          </fieldset>
+          <fieldset class="main-form-fieldset  main-form-visited-place">
+            <legend class="main-form__head-fieldset">Посещенные достопримечательности:</legend>
+            <input type="checkbox" name="bridge-dev" id="bridge-dev-f" checked><label for="bridge-dev-f">Мост Дьявола</label>
+            <input type="checkbox" name="slide-park" id="slide-park-f" checked><label class="main-form__input-label" for="slide-park-f">Слайд-парк</label>
+            <input type="checkbox" name="mountain-bell" id="mountain-bell-f"><label class="main-form__input-label" for="mountain-bell-f">Гора-Колокол</label>
+            <input type="checkbox" name="red-rocks" id="red-rocks-f" checked><label class="main-form__input-label" for="red-rocks-f">Красные скалы</label>
+          </fieldset>
+          <fieldset class="main-form__emotions">
+            <legend class="main-form__head-fieldset">Опишите свои эмоции:</legend>
+            <textarea name="emotions" id="emotions-f" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="main-form__send-form-btn  btn" type="submit">Отправить отзыв</button>
+        </form>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__hash-tag">
+          #Visitsedona
+        </div>
+        <section class="social-block">
+          <a href="#" class="social-block__social-btn  social-block__social-btn--tw">
+            Twitter
+          </a>
+          <a href="#" class="social-block__social-btn  social-block__social-btn--f">
+            Facebook
+          </a>
+          <a href="#" class="social-block__social-btn  social-block__social-btn--youtube">
+            Youtube
+          </a>
+        </section>
+        <section class="made-by">
+          Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

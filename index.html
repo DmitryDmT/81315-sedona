@@ -2,11 +2,150 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Главная «Sedona»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+  <body class="page-body">
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__list-item  main-navigation__list-item--now">
+              <a class="main-navigation__link" href="#">Главная<span class="main-navigation__link--active"></span></a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__list-item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-button-block">
+          <button class="header-button" type="button">
+            Открыть меню
+          </button>
+          <button class="header-button-up" type="button">
+            Закрыть меню
+          </button>
+        </div>
+        <div class="main-header__logo">
+          
+        </div>
+        <div class="main-header__img">
+          
+        </div>
+      </header>
+      <main class="main-block">
+        <section class="page-brief-info">
+          <b class="page-brief-info__head">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p class="page-brief-info__paragraph">Рассмотрим 5 причин, по которым седона круче, чем Гранд каньон!
+          </p>
+        </section>
+        <div class="main-part">
+          <section class="reasons  reasons-blue-1">
+            <div class="reasons-brief  reasons-brief-1">
+              <b class="reasons-brief__head">Настоящий городок</b>
+              <div class="reasons-brief__count"><b>&#8211; №1 &#8211;</b></div>
+              <p class="reasons-brief__paragraph">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reasons__img  reasons-1__img">
+              
+            </div>
+            <div class="reasons-text">
+              <div class="reasons-text-block  reasons-text-house">
+                <div class="reasons-text-house-info">
+                  <b class="reasons-text__head">Жилье</b>
+                  <p class="reasons-text__paragraph">
+                     Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                </div>
+              </div>
+              <div class="reasons-text-block  reasons-text-souvenir">
+                <div class="reasons-text-souvenir-info">
+                  <b class="reasons-text__head">Сувениры</b>
+                  <p class="reasons-text__paragraph">
+                     Не только китайского, но и местного производства!
+                  </p>
+                </div>
+              </div>
+              <div class="reasons-text-block  reasons-text-food">
+                <div class="reasons-text-food-info">
+                  <b class="reasons-text__head">Еда</b>
+                  <p class="reasons-text__paragraph">
+                     Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="reasons  reasons-blue-2">
+            <div class="reasons-brief  reasons-brief-2">
+              <b class="reasons-brief__head">Там есть мост дьявола</b>
+              <div class="reasons-brief__count"><b>&#8211; №2 &#8211;</b></div>
+              <p class="reasons-brief__paragraph">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="reasons__img  reasons-2__img">
+            
+            </div>
+          </section>
+          <section class="reasons  reasons-h-3">
+            <div class="reasons-brief  reasons-brief-3">
+              <b class="reasons-brief__head">Небольшая площадь</b>
+              <div class="reasons-brief__count"><b>&#8211; №3 &#8211;</b></div>
+              <p class="reasons-brief__paragraph">Все достопримечательности находятся очень близко</p>
+            </div>
+          </section>
+          <section class="reasons  reasons-h-4">
+            <div class="reasons-brief  reasons-brief-4">
+              <b class="reasons-brief__head">Красивая дорога</b>
+              <div class="reasons-brief__count"><b>&#8211; №4 &#8211;</b></div>
+              <p class="reasons-brief__paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </section>
+          <section class="reasons  reasons-h-5">
+            <div class="reasons-brief  reasons-brief-5">
+              <b class="reasons-brief__head">Мало туристов</b>
+              <div class="reasons-brief__count"><b>&#8211; №5 &#8211;</b></div>
+              <p class="reasons-brief__paragraph">Большинство едет в Гранд каньон и толпится там</p>
+            </div>
+          </section>
+        </div>
+        <section class="find-hotel">
+          <b class="find-hotel__head">Заинтересовались?</b>
+          <p class="find-hotel__paragraph">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="find-hotel__btn  btn" type="button">Найти гостиницу</button>
+        </section>
+        <div class="map">
+          
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__hash-tag">
+          #Visitsedona
+        </div>
+        <section class="social-block">
+          <a href="#" class="social-block__social-btn  social-block__social-btn--tw">
+            Twitter
+          </a>
+          <a href="#" class="social-block__social-btn  social-block__social-btn--f">
+            Facebook
+          </a>
+          <a href="#" class="social-block__social-btn  social-block__social-btn--youtube">
+            Youtube
+          </a>
+        </section>
+        <section class="made-by">
+          Разработано
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
