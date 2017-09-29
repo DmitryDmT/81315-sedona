@@ -1,0 +1,31 @@
+@import "normalize.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+@import "global/forms.scss";
+@import "global/container.scss";
+
+@import "blocks/page-body.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/main-block.scss";
+@import "blocks/main-part.scss";
+@import "blocks/main-form.scss";
+@import "blocks/main-form-fieldset.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/btn.scss";
+@import "blocks/header-button-block.scss";
+@import "blocks/page-brief-info.scss";
+@import "blocks/reasons.scss";
+@import "blocks/reasons-brief.scss";
+@import "blocks/reasons-text.scss";
+@import "blocks/reasons-text-blocks.scss";
+@import "blocks/gallery-block.scss";
+@import "blocks/photo-block.scss";
+@import "blocks/find-hotel.scss";
+@import "blocks/video-block.scss";
+@import "blocks/map.scss";
+@import "blocks/social-block.scss";
+@import "blocks/made-by.scss";
