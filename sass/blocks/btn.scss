@@ -10,11 +10,9 @@
   color: #ffffff;
   outline: none;
   background-color: $blue-color;
-  
   &:hover {
     background-color: $hover-style;
   }
-  
   &:active {
     color: $active-style-text;
     background-color: $active-style;
