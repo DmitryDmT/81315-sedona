@@ -7,12 +7,14 @@
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   outline: none;
   background-color: $blue-color;
+  
   &:hover {
     background-color: $hover-style;
   }
+  
   &:active {
     color: $active-style-text;
     background-color: $active-style;

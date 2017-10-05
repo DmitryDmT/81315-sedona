@@ -14,12 +14,14 @@
     border-bottom: 1px solid #678fa8;
     text-align: center;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     background-color: $blue-color;
     box-shadow: inset 0 1px 0 0 #9ac2db;
+    
     &:hover {
       background-color: $hover-style;
     }
+    
     &:active {
       color: $active-style-text;
       background-color: $active-style;
@@ -41,17 +43,21 @@
     justify-content: space-around;
     align-items: center;
   }
+  
   .main-navigation__list-item {
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
   }
+  
   .main-navigation__link {
     text-decoration: none;
-    color: #000;
+    color: #000000;
+    
     &:hover {
       color: $blue-color;
     }
+    
     &:active {
       color: rgba(0, 0, 0, 0.3);
     }
