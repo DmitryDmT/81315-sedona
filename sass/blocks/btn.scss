@@ -1,1 +1,24 @@
-/* ! */
+.btn {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px; 
+  border: none;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  outline: none;
+  background-color: $blue-color;
+  &:hover {
+    background-color: $hover-style;
+  }
+  &:active {
+    color: $active-style-text;
+    background-color: $active-style;
+  }
+}
+
+.btn:disabled {
+  background-color: #e5e5e5;
+}

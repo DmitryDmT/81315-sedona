@@ -1,1 +1,11 @@
-/* ! */
+.main-part {
+  display: flex;
+  flex-direction: column;
+}
+
+@media #{$tablet-widths} {
+  .main-part {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

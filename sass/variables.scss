@@ -1,1 +1,12 @@
-/* ! */
+/* Для адаптива */
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1200px);
+$mobile-widths-only: (max-width: 767px);
+
+/* Для стилей ссылок */
+$hover-style: #669ec0;
+$active-style: #5496bd;
+$active-style-text: rgba(255, 255, 255, 0.3);
+
+/* Фон всякого*/
+$blue-color: #81b3d2;

@@ -1,1 +1,28 @@
-/* ! */
+.gallery-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.photo-block__index {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+}
+
+.photo-block__author {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo-block__likes {
+  display: flex;
+}
+
+.photo-block__likes--number {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000;
+}

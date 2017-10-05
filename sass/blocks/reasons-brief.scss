@@ -1,1 +1,40 @@
-/* ! */
+.reasons-brief {
+  text-align: center; 
+  background-color: #eee;
+}
+
+.reasons-brief--blue {
+  background-color: $blue-color;
+}
+
+.reasons-brief--white-text {
+  color: #fff;
+}
+
+.reasons-brief__head {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.reasons-brief__count-b {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.reasons-brief__paragraph {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media #{$tablet-widths} {
+  .reasons-brief {
+    width: 256px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .reasons-brief {
+    width: 400px;
+  }
+}
