@@ -1,5 +1,5 @@
 .video-block {
-  text-align: center;
+  text-align: center; 
 }
 
 .video-block__index {
@@ -19,4 +19,26 @@
   background-color: #736942;
   background-image: url("../../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+@media #{$tablet-widths} {
+  .video-block {
+    padding: 0 60px;
+  }
+  
+  .video-block__video {
+    width: 648px;
+    height: 500px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .video-block {
+    padding: 0 200px;
+  }
+  
+  .video-block__video {
+    width: 800px;
+    height: 500px;
+  }
 }

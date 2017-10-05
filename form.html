@@ -197,39 +197,49 @@
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="main-form-fieldset  main-form-introduce">
             <legend class="main-form__head-fieldset">Представьтесь:</legend>
-            <label class="main-form__input-label" for="first-name-f">Имя*:</label>
-            <input type="text" name="first-name" id="first-name-f" placeholder="Петр">
-            <label class="main-form__input-label" for="surname-f">Фамилия*:</label>
-            <input type="text" name="surname" id="surname-f" placeholder="Иванов">
-            <label class="main-form__input-label" for="middle-name-f">Отчество*:</label>
-            <input type="text" name="middle-name" id="middle-name-f" placeholder="Александрович">
+            <div class="main-form-input-box  main-form-input-box-introduce">
+              <label class="main-form__input-label" for="first-name-f">Имя*:</label>
+              <input type="text" name="first-name" id="first-name-f" placeholder="Петр">
+              <label class="main-form__input-label" for="surname-f">Фамилия*:</label>
+              <input type="text" name="surname" id="surname-f" placeholder="Иванов">
+              <label class="main-form__input-label" for="middle-name-f">Отчество*:</label>
+              <input type="text" name="middle-name" id="middle-name-f" placeholder="Александрович">
+            </div>
           </fieldset>
           <fieldset class="main-form-fieldset  main-form-contact-info">
             <legend class="main-form__head-fieldset">Контактная информация:</legend>
-            <label class="main-form__input-label" for="tel-f">Контактный телефон*:</label>
-            <input type="tel" name="tel" id="tel-f" placeholder="Введите телефон">
-            <label class="main-form__input-label" for="email-f">Электронная почта*:</label>
-            <input type="email" name="email" id="email-f" placeholder="Введите email">
+            <div class="main-form-input-box  main-form-input-box-contact">
+              <label class="main-form__input-label" for="tel-f">Контактный телефон*:</label>
+              <input type="tel" name="tel" id="tel-f" placeholder="Введите телефон">
+              <label class="main-form__input-label" for="email-f">Электронная почта*:</label>
+              <input type="email" name="email" id="email-f" placeholder="Введите email">
+            </div>
           </fieldset>
-          <fieldset class="main-form-fieldset  main-form-total-exp">
+          <fieldset class="main-form-fieldset  main-form-total-exp"><!-- order -1 tablet -->
             <legend class="main-form__head-fieldset">Ваше общее впечатление:</legend>
-            <input type="radio" name="experience" id="experience-f-1" value="positive" checked>
-            <label class="main-form__input-label" for="experience-f-1">Скорее положительное</label>
-            <input type="radio" name="experience" id="experience-f-2" value="negative">
-            <label class="main-form__input-label" for="experience-f-2">Скорее отрицательное</label>
-            <input type="radio" name="experience" id="experience-f-3" value="neutral">
-            <label class="main-form__input-label" for="experience-f-3">Затрудняюсь ответить</label>
+            <div class="main-form-input-box  main-form-input-box-exp">
+              <input type="radio" name="experience" id="experience-f-1" value="positive" checked>
+              <label class="main-form__input-label" for="experience-f-1">Скорее положительное</label>
+              <input type="radio" name="experience" id="experience-f-2" value="negative">
+              <label class="main-form__input-label" for="experience-f-2">Скорее отрицательное</label>
+              <input type="radio" name="experience" id="experience-f-3" value="neutral">
+              <label class="main-form__input-label" for="experience-f-3">Затрудняюсь ответить</label>
+            </div>
           </fieldset>
           <fieldset class="main-form-fieldset  main-form-visited-place">
             <legend class="main-form__head-fieldset">Посещенные достопримечательности:</legend>
-            <input type="checkbox" name="bridge-dev" id="bridge-dev-f" checked><label for="bridge-dev-f">Мост Дьявола</label>
-            <input type="checkbox" name="slide-park" id="slide-park-f" checked><label class="main-form__input-label" for="slide-park-f">Слайд-парк</label>
-            <input type="checkbox" name="mountain-bell" id="mountain-bell-f"><label class="main-form__input-label" for="mountain-bell-f">Гора-Колокол</label>
-            <input type="checkbox" name="red-rocks" id="red-rocks-f" checked><label class="main-form__input-label" for="red-rocks-f">Красные скалы</label>
+            <div class="main-form-input-box  main-form-input-box-visited">
+              <input type="checkbox" name="bridge-dev" id="bridge-dev-f" checked><label for="bridge-dev-f">Мост Дьявола</label>
+              <input type="checkbox" name="slide-park" id="slide-park-f" checked><label class="main-form__input-label" for="slide-park-f">Слайд-парк</label>
+              <input type="checkbox" name="mountain-bell" id="mountain-bell-f"><label class="main-form__input-label" for="mountain-bell-f">Гора-Колокол</label>
+              <input type="checkbox" name="red-rocks" id="red-rocks-f" checked><label class="main-form__input-label" for="red-rocks-f">Красные скалы</label>
+            </div>
           </fieldset>
-          <fieldset class="main-form__emotions">
+          <fieldset class="main-form-fieldset  main-form-emotions">
             <legend class="main-form__head-fieldset">Опишите свои эмоции:</legend>
-            <textarea name="emotions" id="emotions-f" placeholder="Опишите подробно все свои восторги"></textarea>
+            <div class="main-form-input-box  main-form-input-box-emotions">
+              <textarea name="emotions" id="emotions-f" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
           </fieldset>
           <button class="main-form__send-form-btn  btn" type="submit">Отправить отзыв</button>
         </form>

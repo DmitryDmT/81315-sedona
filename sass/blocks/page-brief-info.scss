@@ -12,3 +12,10 @@
   font-size: 14px;
   line-height: 26px;
 }
+
+@media #{$tablet-widths} {
+  .page-brief-info__head {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}

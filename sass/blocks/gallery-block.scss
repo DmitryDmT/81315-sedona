@@ -4,25 +4,18 @@
   padding: 0 20px;
 }
 
-.photo-block__index {
-  font-size: 14px;
-  line-height: 24px;
-  color: #000;
+@media #{$tablet-widths} {
+  .gallery-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
 }
 
-.photo-block__author {
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: none;
-}
-
-.photo-block__likes {
-  display: flex;
-}
-
-.photo-block__likes--number {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000;
+@media #{$desktop-widths} {
+  .gallery-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
