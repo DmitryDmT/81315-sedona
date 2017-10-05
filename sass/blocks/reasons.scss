@@ -20,7 +20,6 @@
 }
 
 @media #{$tablet-widths} {
-
   .reasons {
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,7 +35,6 @@
 }
 
 @media #{$desktop-widths} {
-
   .reasons__img {
     width: 800px;
   }
