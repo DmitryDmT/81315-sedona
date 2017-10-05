@@ -24,11 +24,9 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
   .reasons:nth-of-type(2n) .reasons__img {
     order: -1;
   }
-  
   .reasons__img {
     width: 512px;
   }
