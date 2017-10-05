@@ -57,6 +57,7 @@
   .photo-block--wide-condition {
     width: 648px;
   }
+
   .photo-block__picture {
     width: 324px;
     height: 267px;
@@ -66,6 +67,7 @@
     width: 648px;
     height: 400px;
   }
+
   .photo-block__under-info {
     display: flex;
     justify-content: space-between;
@@ -73,13 +75,16 @@
 }
 
 @media #{$desktop-widths} {
+
   .photo-block--wide-condition {
     width: 1200px;
   }
+
   .photo-block__picture {
     width: 400px;
     height: 267px;
   }
+
   .photo-block--wide-picture {
     width: 1200px;
   }

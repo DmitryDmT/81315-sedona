@@ -5,7 +5,7 @@
 .video-block__index {
   font-size: 18px;
   line-height: 26px;
-  color: #000;
+  color: #000000;
 }
 
 .video-block__paragraph {
@@ -22,9 +22,11 @@
 }
 
 @media #{$tablet-widths} {
+
   .video-block {
     padding: 0 60px;
   }
+
   .video-block__video {
     width: 648px;
     height: 500px;
@@ -32,9 +34,11 @@
 }
 
 @media #{$desktop-widths} {
+
   .video-block {
     padding: 0 200px;
   }
+
   .video-block__video {
     width: 800px;
     height: 500px;

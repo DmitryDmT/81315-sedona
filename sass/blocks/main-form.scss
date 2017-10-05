@@ -5,9 +5,11 @@
 }
 
 @media #{$tablet-widths} {
+
   .main-form__send-form-btn {
     width: 324px;
   }
+
   .main-form {
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,9 +18,11 @@
 }
 
 @media #{$desktop-widths} {
+
   .main-form {
     padding: 0 120px;
   }
+
   .main-form__send-form-btn {
     width: 480px;
   }
