@@ -1,1 +1,21 @@
-/* ! */
+.gallery-block {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+@media #{$tablet-widths} {
+  .gallery-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .gallery-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}

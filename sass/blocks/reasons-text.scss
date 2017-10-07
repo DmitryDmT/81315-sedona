@@ -1,1 +1,10 @@
-/* ! */
+.reasons-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media #{$tablet-widths} {
+  .reasons-text {
+    flex-direction: row;
+  }
+}

@@ -1,1 +1,15 @@
-/* ! */
+.find-hotel {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.find-hotel__head {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.find-hotel__paragraph {
+  font-size: 14px;
+  line-height: 24px;
+}
