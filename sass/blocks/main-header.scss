@@ -30,6 +30,10 @@
 }
 
 @media #{$tablet-widths} {
+  .main-header {
+    margin-bottom: 47px;
+  }
+
   .main-header__logo-nav-mobile {
     display: none;
   }
