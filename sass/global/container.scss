@@ -1,12 +1,10 @@
 .container {
-  width: 320px;
-  margin: 0 auto;
+  width: auto;
 }
 
 @media #{$tablet-widths} {
   .container {
-    width: 768px;
-    margin: 0 auto;
+    
   }
 }
 

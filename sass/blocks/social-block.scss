@@ -1,1 +1,42 @@
-/* ! */
+.social-block {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.social-block__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  font-size: 0;
+  background-color: $blue-color;
+
+  &:hover {
+    background-color: $hover-style;
+  }
+
+  &:active {
+    background-color: $active-style;
+  }
+
+  &:active svg {
+    fill: $active-style-text;
+  }
+}
+
+.social-block__social-btn:last-of-type {
+  margin-right: 0;
+}
+
+.social-block__social-btn svg {
+  fill: #ffffff;
+}
+
+@media #{$mobile-widths-only} {
+  .social-block {
+    margin-bottom: 35px;
+  }
+}

@@ -3,6 +3,10 @@
 }
 
 @media #{$mobile-widths-only} {
+  .main-navigation {
+    margin-bottom: 56px;
+  }
+  
   .main-navigation__list-item {
     font-size: 18px;
     line-height: 40px;
@@ -11,6 +15,8 @@
 
   .main-navigation__link {
     display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #678fa8;
     text-align: center;
     text-decoration: none;

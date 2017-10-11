@@ -12,10 +12,16 @@
   line-height: 26px;
 }
 
+@media #{$mobile-widths-only} {
+  .main-footer__hash-tag {
+    margin-bottom: 37px;
+  }
+}
+
 @media #{$tablet-widths} {
   .main-footer {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-around;
     margin: 0;
   }

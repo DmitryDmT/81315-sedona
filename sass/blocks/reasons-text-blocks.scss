@@ -1,3 +1,46 @@
 .reasons-text__head {
   color: #000000;
 }
+
+@media #{$mobile-widths-only} {
+  .reasons-text-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  .reasons-text-info {
+    margin-left: 30px;
+    padding-right: 50px;
+  }
+
+  .reasons-text-block__svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .reasons-text-block svg {
+    position: absolute;
+    top: -9px;
+  }
+
+  .reasons-text-house svg {
+    min-width: 39px;
+    height: 37px;
+  }
+
+  .reasons-text-souvenir svg {
+    top: -10px;
+    min-width: 32px;
+    height: 38px;
+  }
+
+  .reasons-text-food svg {
+    top: -5px;
+    min-width: 40px;
+    height: 35px;
+  }
+}
