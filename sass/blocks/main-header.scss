@@ -21,7 +21,7 @@
     margin-bottom: 42px;
   }
 
-  .main-header__logo-nav {
+  .main-header__logo-nav-mobile {
     position: relative;
     display: block;
     margin: 0 auto;
@@ -30,8 +30,12 @@
 }
 
 @media #{$tablet-widths} {
+  .main-header__logo-nav-mobile {
+    display: none;
+  }
+
   .main-header__img {
-    width: 768px;
+    width: auto;
   }
 
   .main-header__img-other-pages {
