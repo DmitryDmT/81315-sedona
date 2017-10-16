@@ -74,13 +74,28 @@
 }
 
 @media #{$tablet-widths} {
-  .reasons-brief {
-    width: 33%;
+  .reasons-brief--blue {
+    padding: 42px 39px;
+    width: 21.6%;
+  }
+  
+  .reasons-brief--grey {
+    padding: 42px 0;
+    flex-basis: 256px;
   }
 
   .reasons-brief__head {
     font-size: 21px;
     line-height: 26px;
+  }
+
+  .reasons-brief--grey .reasons-brief__head {
+    display: block;
+    padding: 0 50px;
+  }
+  
+  .reasons-brief--grey .reasons-brief__paragraph {
+    padding: 0 45px;
   }
 }
 

@@ -13,5 +13,8 @@
 @media #{$tablet-widths} {
   .reasons-text {
     flex-direction: row;
+    align-items: baseline;
+    padding-top: 57px;
+    padding-bottom: 60px;
   }
 }

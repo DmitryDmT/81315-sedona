@@ -1,12 +1,13 @@
-.main-part {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+@media #{$mobile-widths-only} {
+  .main-part {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
 
 @media #{$tablet-widths} {
   .main-part {
-    flex-direction: row;
-    flex-wrap: wrap;
+    
   }
 }

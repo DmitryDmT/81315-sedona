@@ -1,29 +1,29 @@
+.reasons {
+  display: flex;
+  flex-direction: column;
+}
+
+.reasons__img {
+  width: auto;
+  height: 260px;
+}
+
 .reasons--grey {
   background-color: #eeeeee;
 }
 
 .reasons-1__img {
+  width: auto;
   background-color: #f8e5e1;
   background-image: url("../../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .reasons-2__img {
+  width: auto;
   background-color: #dea893;
   background-image: url("../../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
-}
-
-@media #{$mobile-widths-only} {
-  .reasons {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .reasons__img {
-    width: auto;
-    height: 260px;
-  }
 }
 
 @media #{$tablet-widths} {
@@ -32,18 +32,24 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
-  .reasons--grey {
-    width: 33%;
-  }
 
   .reasons__img {
     width: 67%;
     height: 256px;
   }
-  
+
   .reasons:nth-of-type(2n) .reasons__img {
     order: -1;
+  }
+
+  .reasons--grey {
+    
+  }
+  
+  .reasons-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

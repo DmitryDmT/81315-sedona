@@ -46,3 +46,18 @@
     height: 35px;
   }
 }
+
+@media #{$tablet-widths} {
+  .reasons-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 0 35px;
+    text-align: center;
+  }
+
+  .reasons-text-souvenir {
+    order: 1;
+  }
+}

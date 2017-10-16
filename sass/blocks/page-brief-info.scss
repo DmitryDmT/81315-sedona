@@ -1,6 +1,6 @@
 .page-brief-info {
   padding: 0 30px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -11,13 +11,23 @@
 }
 
 .page-brief-info__paragraph {
+  margin-top: 25px;
   font-size: 14px;
   line-height: 26px;
+}
+
+.page-brief-info--other-p {
+  padding: 0 25px;
 }
 
 @media #{$tablet-widths} {
   .page-brief-info {
     padding: 0 100px;
+    margin-bottom: 40px;
+  }
+  
+  .page-brief-info--other-p {
+    padding: 0 170px;
     margin-bottom: 40px;
   }
 
