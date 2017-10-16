@@ -40,3 +40,9 @@
     margin-top: 25px;
   }
 }
+
+@media #{$desktop-widths} {
+  .page-brief-info {
+    padding: 0 380px;
+  }
+}

@@ -62,7 +62,6 @@
   padding: 0;
   background: none;
   border: none;
-  opacity: 0.3;
 }
 
 @media #{$mobile-widths-only} {
@@ -78,6 +77,10 @@
   .photo-block__under-info {
     width: 280px;
     margin: 0 auto;
+  }
+
+  .photo-block__like-button {
+    opacity: 0.3;
   }
 }
 
@@ -124,6 +127,11 @@
 }
 
 @media #{$desktop-widths} {
+  .photo-block {
+    position: relative;
+    width: 400px;
+  }
+
   .photo-block--wide-condition {
     width: 1200px;
   }
@@ -135,5 +143,43 @@
 
   .photo-block--wide-picture {
     width: 1200px;
+  }
+
+  .photo-block__under-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background: none;
+  }
+
+  .photo-block__likes {
+    position: relative;
+    margin-right: 40px;
+  }
+
+  .photo-block__index {
+    color: #ffffff;
+  }
+
+  .photo-block-north-road .photo-block__under-info {
+    background: none;
+  }
+
+  .photo-block__opacity-layer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
+  .photo-block__like-button svg {
+    fill: #ffffff;
+  }
+
+  .photo-block__likes--number {
+    color: #ffffff;
   }
 }
