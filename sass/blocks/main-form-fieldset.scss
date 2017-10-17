@@ -2,6 +2,10 @@
   display: none;
 }
 
+.main-form-visited__wrapper .helper {
+  display: none;
+}
+
 .main-form-fieldset {
   position: relative;
   display: flex;
@@ -386,47 +390,85 @@
     width: 960px;
   }
 
-  .main-form-contact-info__input-label {
+  .main-form-input-box-contact {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
   }
 
-  .main-form-contact__input-tel {
-    width: 315px;
+  .main-form-contact-info__input-label {
+    flex-direction: row;
+    align-items: baseline;
   }
-  
-  .main-form-contact__input-email {
-    width: 315px;
+
+  .main-form-contact-info__input-label {
+    margin: 0;
   }
-//  .main-form-input-box-contact {
-//    display: flex;
-//    flex-direction: row;
-//    justify-content: space-between;
-//    align-items: flex-start;
-//  }
-//
-//  .main-form-contact-info__input-label {
-//    margin: 0;
-//    align-self: center;
-//  }
-//
-//  .main-form-contact__input-tel {
-//    margin-left: -80px;
-//  }
+
+  .main-form-contact-info__input-label-tel::after {
+    top: 83px;
+    left: 348px;
+  }
+
+  .main-form-contact-info__input-label-email::after {
+    top: 83px;
+    right: 0;
+  }
+
+  .main-form-contact__input {
+    width: 220px;
+  }
+
+  .label-tel-word {
+    margin-right: 15px;
+  }
 
   .main-form-visited-place {
     width: 960px;
   }
 
   .main-form-input-box-visited {
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
+
+  .main-form-visited__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 480px;
+  }
+
+  .main-form-visited__wrapper:nth-of-type(1) {
+    margin-right: 0;
+  }
+  
 
   .main-form-emotions {
     width: 960px;
   }
-  
+
   .main-form-total-exp__head-fieldset {
     text-align: center;
+  }
+
+  .main-form-fieldset::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    margin-left: 19.14%;
+    width: 61.8%;
+    height: 30px;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+  
+  .main-form-visited__wrapper .helper {
+    display: block;
+  }
+  
+  .main-form-visited__wrapper .unhelper {
+    display: none;
   }
 }
