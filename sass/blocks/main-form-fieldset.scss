@@ -1,3 +1,7 @@
+.tel-word {
+  display: none;
+}
+
 .main-form-fieldset {
   position: relative;
   display: flex;
@@ -9,19 +13,17 @@
   border: none;
 }
 
-.main-form-fieldset::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  width: 100%;
-  height: 1px;
-  background-color: #e5e5e5;
-}
-
 .main-form-input-box {
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+}
+
+.main-form-input-box input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
 }
 
 .main-form__head-fieldset {
@@ -55,40 +57,244 @@
 }
 
 .main-form-contact-info__input-label {
+  display: flex;
+  flex-direction: column;
   margin-left: 22px;
-  margin-bottom: 9px;
 }
 
 .main-form-contact__input {
   position: relative;
   width: auto;
-  padding: 18px 22px;
+  padding: 20px 22px;
+  padding-right: 80px;
+  margin-bottom: 14px;
+  margin-top: 9px;
   border: none;
   background-color: #f2f2f2;
 }
 
-.main-form-contact__input::after {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 58px;
-  height: 58px;
-  background-color: red;
+.main-form-contact__input:last-of-type {
+  margin-bottom: 28px;
 }
 
-.main-form-contact__input-tel::after {
-  
+.main-form-contact-info__input-label::after {
+  content: "";
+  position: absolute;
+  top: 79px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 10;
+}
+
+.main-form-contact-info__input-label-email::after {
+  top: 195px;
+  background-image: url("../../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-form-total-exp__input {
+  display: none;
+}
+
+.main-form-total-exp__input + label {
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 79px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.main-form-total-exp__input + label {
+  margin-bottom: 8px;
+}
+
+.main-form-total-exp__input-label:last-of-type {
+  margin-bottom: 20px;
+}
+
+.main-form-total-exp__input + label::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+}
+
+.main-form-total-exp__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 17px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+
+.main-form-visited-place__input {
+  display: none;
+}
+
+.main-form-visited-place__input + label {
+  position: relative;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 79px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.main-form-visited-place__input + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.main-form-visited-place__input:checked + label::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-form-visited-place__input-label:last-of-type {
+  margin-bottom: 15px;
+}
+
+.main-form__textarea-emotions {
+  padding: 18px 20px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.main-form__textarea-emotions::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-form-fieldset:last-of-type {
+  margin-bottom: 51px;
+}
+
+@media #{$mobile-widths-only} {
+  .main-form-fieldset::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  .main-form-visited__wrapper:nth-of-type(1) .main-form-visited-place__input-label:last-of-type {
+    margin-bottom: 5px;
+  }
+
+  .main-form-visited-place__head-fieldset br {
+    display: none;
+  }
 }
 
 @media #{$tablet-widths} {
   .main-form-input-box {
     display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+
+  .main-form-contact-info {
+    text-align: left;
+  }
+
+  .main-form__head-fieldset {
+    position: relative;
+    z-index: 15;
+  }
+
+  .main-form-fieldset::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+
+  .main-form-fieldset::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    margin-left: 19.14%;
+    width: 61.8%;
+    height: 30px;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+
+  .main-form-visited-place::before {
+    top: 20px;
+  }
+
+  .main-form-introduce::before {
+    top: 0;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  .main-form-total-exp::before {
+    top: 0;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  .main-form-introduce::after {
+    top: 0;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+
+  .main-form-total-exp::after {
+    top: 0;
+    width: 0;
+    height: 0;
+    background: none;
   }
 
   .main-form-introduce {
-    width: 324px;
+    width: 41.05%;
   }
 
   .main-form-total-exp {
@@ -97,11 +303,16 @@
   }
 
   .main-form-contact-info {
-    width: 648px;
+    width: 100%;
   }
 
   .main-form-visited-place {
-    width: 648px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .main-form-visited-place__head-fieldset {
+    padding: 0 150px;
   }
 
   .main-form-input-box-visited {
@@ -109,14 +320,62 @@
   }
 
   .main-form-emotions {
-    width: 648px;
+    width: 100%;
+  }
+
+  .main-form-introduce__head-fieldset {
+    text-align: left;
+    margin-bottom: 55px;
+  }
+
+  .main-form-total-exp__head-fieldset {
+    text-align: left;
+    margin-bottom: 48px;
+  }
+
+  .main-form-contact-info__input-label::after {
+    right: 0;
+  }
+
+  .main-form-contact-info__input-label-email::after {
+    top: 195px;
+  }
+
+  .main-form-contact__input-tel {
+    margin-bottom: 25px;
+  }
+
+  .main-form-input-box-visited {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .main-form-visited__wrapper:nth-of-type(1) {
+    margin-right: 60px;
+  }
+
+  .main-form-visited__wrapper .main-form-visited-place__input-label {
+    margin-bottom: 10px;
+  }
+
+  .main-form-emotions__head-fieldset {
+    margin-bottom: 45px;
   }
 }
 
 @media #{$desktop-widths} {
+  .tel-word {
+    display: block;
+  }
+
+  .contact-tel-word {
+    display: none;
+  }
+
   .main-form-introduce {
     width: 400px;
-    margin-left: 160px;
   }
 
   .main-form-total-exp {
@@ -126,6 +385,33 @@
   .main-form-contact-info {
     width: 960px;
   }
+
+  .main-form-contact-info__input-label {
+    flex-direction: row;
+  }
+
+  .main-form-contact__input-tel {
+    width: 315px;
+  }
+  
+  .main-form-contact__input-email {
+    width: 315px;
+  }
+//  .main-form-input-box-contact {
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: space-between;
+//    align-items: flex-start;
+//  }
+//
+//  .main-form-contact-info__input-label {
+//    margin: 0;
+//    align-self: center;
+//  }
+//
+//  .main-form-contact__input-tel {
+//    margin-left: -80px;
+//  }
 
   .main-form-visited-place {
     width: 960px;
@@ -138,5 +424,9 @@
 
   .main-form-emotions {
     width: 960px;
+  }
+  
+  .main-form-total-exp__head-fieldset {
+    text-align: center;
   }
 }

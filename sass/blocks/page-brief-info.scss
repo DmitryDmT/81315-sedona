@@ -43,10 +43,29 @@
   .page-brief-info__paragraph {
     margin-top: 25px;
   }
+
+  .page-brief-info--other-pa {
+    padding: 0 165px;
+  }
 }
 
 @media #{$desktop-widths} {
   .page-brief-info {
     padding: 0 380px;
+  }
+
+  .page-brief-info--other-pa {
+    margin-bottom: 10px;
+  }
+
+  .page-brief-info__head {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .page-brief-info__paragraph {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
