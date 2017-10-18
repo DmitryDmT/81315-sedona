@@ -112,15 +112,12 @@
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 79px;
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: none;
   cursor: pointer;
-}
-
-.main-form-total-exp__input + label {
-  margin-bottom: 8px;
 }
 
 .main-form-total-exp__input-label:last-of-type {
@@ -237,6 +234,7 @@
   }
 
   .main-form-contact-info {
+    width: 100%;
     text-align: left;
   }
 
@@ -306,10 +304,6 @@
     order: -1;
   }
 
-  .main-form-contact-info {
-    width: 100%;
-  }
-
   .main-form-visited-place {
     width: 100%;
     margin-bottom: 25px;
@@ -320,7 +314,10 @@
   }
 
   .main-form-input-box-visited {
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .main-form-emotions {
@@ -347,13 +344,6 @@
 
   .main-form-contact__input-tel {
     margin-bottom: 25px;
-  }
-
-  .main-form-input-box-visited {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
   }
 
   .main-form-visited__wrapper:nth-of-type(1) {
@@ -400,9 +390,6 @@
   .main-form-contact-info__input-label {
     flex-direction: row;
     align-items: baseline;
-  }
-
-  .main-form-contact-info__input-label {
     margin: 0;
   }
 
