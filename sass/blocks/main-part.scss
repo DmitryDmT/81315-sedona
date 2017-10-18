@@ -8,6 +8,8 @@
 
 @media #{$tablet-widths} {
   .main-part {
-    
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 }
