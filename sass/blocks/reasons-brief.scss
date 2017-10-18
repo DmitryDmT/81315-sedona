@@ -78,6 +78,10 @@
     padding: 40px 40px;
   }
 
+  .reasons:nth-of-type(1) .reasons-brief__paragraph {
+    padding: 0 5px;
+  }
+
   .reasons-brief--blue {
     width: 23%;
     padding: 40px 40px;
@@ -91,6 +95,18 @@
 
 @media #{$desktop-widths} {
   .reasons-brief {
-    width: 400px;
+    padding: 40px 40px;
+  }
+
+  .reasons-brief--blue {
+    padding: 50px 60px;
+  }
+
+  .reasons-brief--blue .reasons-brief__paragraph {
+    padding: 0 20px;
+  }
+  
+  .reasons--grey:nth-of-type(2) .reasons-brief__paragraph {
+    padding: 0 30px;
   }
 }

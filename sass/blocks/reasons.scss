@@ -50,7 +50,13 @@
 }
 
 @media #{$desktop-widths} {
+  .reasons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
   .reasons__img {
-    width: 800px;
+    min-width: 800px;
   }
 }
