@@ -24,6 +24,22 @@
     width: auto;
     height: 260px;
   }
+
+  .reasons--first {
+    position: relative;
+  }
+
+  .reasons--first-triangl {
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+  }
+
+  .reasons-brief__head br {
+    display: none;
+  }
 }
 
 @media #{$tablet-widths} {

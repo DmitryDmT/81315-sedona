@@ -27,6 +27,7 @@
   .reasons-text-block svg {
     position: absolute;
     top: -9px;
+    left: 0;
   }
 
   .reasons-text-house svg {
@@ -52,10 +53,15 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0 35px;
+    
+    
     margin-top: 25px;
+    width: 33.3%;
     text-align: center;
+  }
+
+  .reasons-text-info {
+     padding: 0 35px;
   }
 
   .reasons-text-souvenir {
