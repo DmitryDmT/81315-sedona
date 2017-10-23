@@ -7,7 +7,7 @@
   width: auto;
   height: 389px;
   background-color: #b3c9e0;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
@@ -23,8 +23,7 @@
 
   .main-header__logo-nav-mobile {
     position: relative;
-    display: block;
-    margin: 0 auto;
+    text-align: center;
     margin-top: -56px;
   }
 }

@@ -354,8 +354,8 @@
           <p class="page-brief-info__paragraph">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </section>
         <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="main-form-fieldset  main-form-introduce">
-            <legend class="main-form__head-fieldset  main-form-introduce__head-fieldset">Представьтесь:</legend>
+          <div class="main-form-fieldset  main-form-introduce">
+            <h3 class="main-form__head-fieldset  main-form-introduce__head-fieldset">Представьтесь:</h3>
             <div class="main-form-input-box  main-form-input-box-introduce">
               <label class="main-form__input-label  main-form-introduce__input-label">
                 <span class="main-form-introduce__input-name">Имя*:</span>
@@ -370,20 +370,36 @@
                 <input class="main-form-introduce__input" type="text" name="middle-name" id="middle-name-f" placeholder="Александрович">
               </label>
             </div>
-          </fieldset>
-          <fieldset class="main-form-fieldset  main-form-contact-info">
-            <legend class="main-form__head-fieldset  main-form-contact-info__head-fieldset">Контактная информация:</legend>
+          </div>
+          <div class="main-form-fieldset  main-form-contact-info">
+            <h3 class="main-form__head-fieldset  main-form-contact-info__head-fieldset">Контактная информация:</h3>
             <div class="main-form-input-box  main-form-input-box-contact">
               <label class="main-form__input-label  main-form-contact-info__input-label  main-form-contact-info__input-label-tel" for="tel-f"><span class="label-tel-word  contact-tel-word">Контактный телефон*:</span><span class="label-tel-word  tel-word">Телефон*:</span>
                 <input class="main-form-contact__input  main-form-contact__input-tel" type="tel" name="tel" id="tel-f" placeholder="Введите телефон">
+                <div class="main-form-contact-info__input-label-svg">
+                  <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
+                    <g id="Page-1">
+                      <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+                        <g id="phone" transform="translate(85.000000, 126.000000)">
+                          <path id="Shape" fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
               </label>
               <label class="main-form__input-label  main-form-contact-info__input-label  main-form-contact-info__input-label-email" for="email-f"><span class="label-tel-word">Электронная почта*:</span>
                 <input class="main-form-contact__input  main-form-contact__input-email" type="email" name="email" id="email-f" placeholder="Введите email">
+                <div class="main-form-contact-info__input-label-svg">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                    <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+                  </svg>
+                </div>
               </label>
             </div>
-          </fieldset>
-          <fieldset class="main-form-fieldset  main-form-total-exp"><!-- order -1 tablet -->
-            <legend class="main-form__head-fieldset  main-form-total-exp__head-fieldset">Ваше общее впечатление:</legend>
+          </div>
+          <div class="main-form-fieldset  main-form-total-exp"><!-- order -1 tablet -->
+            <h3 class="main-form__head-fieldset  main-form-total-exp__head-fieldset">Ваше общее впечатление:</h3>
             <div class="main-form-input-box  main-form-input-box-exp">
               <input class="main-form-total-exp__input" type="radio" name="experience" id="experience-f-1" value="positive" checked>
               <label class="main-form__input-label  main-form-total-exp__input-label" for="experience-f-1">Скорее положительное</label>
@@ -392,28 +408,22 @@
               <input class="main-form-total-exp__input" type="radio" name="experience" id="experience-f-3" value="neutral">
               <label class="main-form__input-label  main-form-total-exp__input-label" for="experience-f-3">Затрудняюсь ответить</label>
             </div>
-          </fieldset>
-          <fieldset class="main-form-fieldset  main-form-visited-place">
-            <legend class="main-form__head-fieldset  main-form-visited-place__head-fieldset">Посещенные<br> достопримечательности:</legend>
+          </div>
+          <div class="main-form-fieldset  main-form-visited-place">
+            <h3 class="main-form__head-fieldset  main-form-visited-place__head-fieldset">Посещенные<br> достопримечательности:</h3>
             <div class="main-form-input-box  main-form-input-box-visited">
-              <div class="main-form-visited__wrapper">
-                <input class="main-form-visited-place__input" type="checkbox" name="bridge-dev" id="bridge-dev-f" checked><label class="main-form__input-label  main-form-visited-place__input-label" for="bridge-dev-f">Мост Дьявола</label>
-                <input class="main-form-visited-place__input" type="checkbox" name="mountain-bell" id="mountain-bell-f"><label class="helper  main-form-visited-place__input-label" for="mountain-bell-f">Гора-Колокол</label><!-- Психанул -->
-                <input class="main-form-visited-place__input" type="checkbox" name="slide-park" id="slide-park-f" checked><label class="unhelper  main-form__input-label  main-form-visited-place__input-label" for="slide-park-f">Слайд-парк</label><!-- Психанул -->
-              </div>
-              <div class="main-form-visited__wrapper">
-                <input class="main-form-visited-place__input" type="checkbox" name="mountain-bell" id="mountain-bell-f"><label class="unhelper  main-form__input-label  main-form-visited-place__input-label" for="mountain-bell-f">Гора-Колокол</label><!-- Психанул -->
-                <input class="main-form-visited-place__input" type="checkbox" name="slide-park" id="slide-park-f" checked><label class="helper  main-form__input-label  main-form-visited-place__input-label" for="slide-park-f">Слайд-парк</label><!-- Психанул -->
-                <input class="main-form-visited-place__input" type="checkbox" name="red-rocks" id="red-rocks-f" checked><label class="main-form__input-label  main-form-visited-place__input-label" for="red-rocks-f">Красные скалы</label>
-              </div>
+              <input class="main-form-visited-place__input" type="checkbox" name="bridge-dev" id="bridge-dev-f" checked><label class="main-form__input-label  main-form-visited-place__input-label  main-form-visited-place__input-label-bridge" for="bridge-dev-f">Мост Дьявола</label>
+              <input class="main-form-visited-place__input  main-form-visited-place__input-2" type="checkbox" name="slide-park" id="slide-park-f" checked><label class="main-form-visited-place__input-label  main-form-visited-place__input-label-slide" for="slide-park-f">Слайд-парк</label>
+              <input class="main-form-visited-place__input  main-form-visited-place__input-1" type="checkbox" name="mountain-bell" id="mountain-bell-f"><label class="main-form-visited-place__input-label  main-form-visited-place__input-label-mount" for="mountain-bell-f">Гора-Колокол</label>
+              <input class="main-form-visited-place__input" type="checkbox" name="red-rocks" id="red-rocks-f" checked><label class="main-form__input-label  main-form-visited-place__input-label  main-form-visited-place__input-label-rock" for="red-rocks-f">Красные скалы</label>
             </div>
-          </fieldset>
-          <fieldset class="main-form-fieldset  main-form-emotions">
-            <legend class="main-form__head-fieldset  main-form-emotions__head-fieldset">Опишите свои эмоции:</legend>
+          </div>
+          <div class="main-form-fieldset  main-form-emotions">
+            <h3 class="main-form__head-fieldset  main-form-emotions__head-fieldset">Опишите свои эмоции:</h3>
             <div class="main-form-input-box  main-form-input-box-emotions">
               <textarea class="main-form__textarea-emotions" name="emotions" id="emotions-f" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
-          </fieldset>
+          </div>
           <div class="main-form__send-require-wrapper">
             <button class="main-form__send-form-btn  btn" type="submit">Отправить отзыв</button>
             <span class="main-form__require-state">* &#8211; обязательные поля</span>
