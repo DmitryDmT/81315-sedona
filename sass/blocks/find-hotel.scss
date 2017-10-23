@@ -10,6 +10,33 @@
 }
 
 .find-hotel__paragraph {
+  padding: 0 10px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media #{$mobile-widths-only} {
+  .find-hotel {
+    padding: 0 6%;
+    margin-bottom: 49px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .find-hotel {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .find-hotel__head {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .find-hotel__paragraph {
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
 }

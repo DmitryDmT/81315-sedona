@@ -4,10 +4,10 @@
 }
 
 .main-header__img {
-  width: 320px;
+  width: auto;
   height: 389px;
   background-color: #b3c9e0;
-  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
@@ -16,14 +16,29 @@
 }
 
 @media #{$mobile-widths-only} {
-  .main-header__logo-nav {
-    display: none;
+  .main-header__img {
+    margin-top: -35px;
+    margin-bottom: 42px;
+  }
+
+  .main-header__logo-nav-mobile {
+    position: relative;
+    text-align: center;
+    margin-top: -56px;
   }
 }
 
 @media #{$tablet-widths} {
+  .main-header {
+    margin-bottom: 47px;
+  }
+
+  .main-header__logo-nav-mobile {
+    display: none;
+  }
+
   .main-header__img {
-    width: 768px;
+    width: auto;
   }
 
   .main-header__img-other-pages {

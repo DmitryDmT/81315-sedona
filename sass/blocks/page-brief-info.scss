@@ -1,4 +1,6 @@
 .page-brief-info {
+  padding: 0 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -9,13 +11,61 @@
 }
 
 .page-brief-info__paragraph {
+  margin-top: 25px;
   font-size: 14px;
   line-height: 26px;
 }
 
+.page-brief-info--other-p {
+  padding: 0 25px;
+}
+
+.page-brief-info--other-pa {
+  padding: 0 20px;
+}
+
 @media #{$tablet-widths} {
+  .page-brief-info {
+    padding: 0 100px;
+    margin-bottom: 40px;
+  }
+
+  .page-brief-info--other-p {
+    padding: 0 170px;
+    margin-bottom: 40px;
+  }
+
+  .page-brief-info__head {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .page-brief-info__paragraph {
+    margin-top: 25px;
+  }
+
+  .page-brief-info--other-pa {
+    padding: 0 165px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-brief-info {
+    padding: 0 280px;
+  }
+
+  .page-brief-info--other-pa {
+    margin-bottom: 10px;
+  }
+
   .page-brief-info__head {
     font-size: 30px;
     line-height: 39px;
+  }
+
+  .page-brief-info__paragraph {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
   }
 }

@@ -1,1 +1,30 @@
-/* ! */
+.made-by {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+}
+
+.made-by__create {
+  margin-right: 7px;
+}
+
+.made-by__name {
+  display: flex;
+  flex-direction: row;
+  font-size: 0;
+}
+
+.made-by__name svg {
+  min-width: 27px;
+  height: 45px;
+  fill: #000000;
+
+  &:hover {
+    fill: $blue-color;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}

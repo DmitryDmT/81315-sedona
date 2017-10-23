@@ -3,8 +3,18 @@
   flex-direction: column;
 }
 
+@media #{$mobile-widths-only} {
+  .reasons-text {
+    margin-top: 37px;
+    margin-bottom: 5px;
+  }
+}
+
 @media #{$tablet-widths} {
   .reasons-text {
     flex-direction: row;
+    align-items: baseline;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }

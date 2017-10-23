@@ -1,11 +1,15 @@
-.main-part {
-  display: flex;
-  flex-direction: column;
+@media #{$mobile-widths-only} {
+  .main-part {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
 }
 
 @media #{$tablet-widths} {
   .main-part {
-    flex-direction: row;
+    display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 }

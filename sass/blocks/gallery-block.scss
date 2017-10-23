@@ -1,14 +1,21 @@
 .gallery-block {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  margin-bottom: 35px;
+}
+
+@media #{$mobile-widths-only} {
+  .gallery-block {
+    border-top: 1px solid #e5e5e5;
+  }
 }
 
 @media #{$tablet-widths} {
   .gallery-block {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 60px;
+    margin: 0 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -17,5 +24,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
   }
 }

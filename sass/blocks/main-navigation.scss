@@ -3,6 +3,14 @@
 }
 
 @media #{$mobile-widths-only} {
+  .main-header__logo-nav-tablet {
+    display: none;
+  }
+
+  .main-navigation {
+    margin-bottom: 56px;
+  }
+
   .main-navigation__list-item {
     font-size: 18px;
     line-height: 40px;
@@ -11,6 +19,8 @@
 
   .main-navigation__link {
     display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #678fa8;
     text-align: center;
     text-decoration: none;
@@ -28,20 +38,44 @@
     }
   }
 
-  .main-navigation__list-item:last-of-type .main-navigation__link {
+  .main-navigation__list:last-of-type .main-navigation__list-item:last-of-type .main-navigation__link {
     border-bottom: none;
     box-shadow:
-      inset 0 -5px 15px -10px black,
+      inset 0 -6px 15px -10px #000000,
       inset 0 1px 0 0 #9ac2db;
   }
 }
 
 @media #{$tablet-widths} {
-  .main-navigation__list {
+  .main-navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .main-header__logo-nav-tablet {
+    position: relative;
+    height: 56px;
+  }
+
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    width: 333px;
+    min-height: 56px;
+  }
+
+  .main-navigation__list-1 {
+    margin-right: 7%;
+    margin-left: 6.4%;
+  }
+
+  .main-navigation__list-2 {
+    margin-right: 3.4%;
+    margin-left: 7%;
   }
 
   .main-navigation__list-item {
@@ -51,6 +85,8 @@
   }
 
   .main-navigation__link {
+    padding-top: 19px;
+    padding-bottom: 19px;
     text-decoration: none;
     color: #000000;
 

@@ -1,6 +1,5 @@
 .reasons-brief {
   text-align: center;
-  background-color: #eeeeee;
 }
 
 .reasons-brief--blue {
@@ -21,6 +20,10 @@
   color: #000000;
 }
 
+.reasons-brief__count {
+  padding-top: 7px;
+}
+
 .reasons-brief__count-b {
   font-size: 14px;
   line-height: 21px;
@@ -32,14 +35,78 @@
   line-height: 21px;
 }
 
+@media #{$mobile-widths-only} {
+  .reasons-brief {
+    padding-top: 29px;
+  }
+
+  .reasons-brief--blue {
+    padding-top: 42px;
+    padding-bottom: 28px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: $blue-color;
+  }
+
+  .reasons:nth-of-type(1) .reasons-brief--blue {
+    padding-top: 58px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .reasons--grey .reasons-brief {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  .reasons-brief__head {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .reasons--grey:last-of-type .reasons-brief {
+    border: 0;
+  }
+}
+
 @media #{$tablet-widths} {
   .reasons-brief {
-    width: 256px;
+    padding: 40px 40px;
+  }
+
+  .reasons:nth-of-type(1) .reasons-brief__paragraph {
+    padding: 0 5px;
+  }
+
+  .reasons-brief--blue {
+    width: 23%;
+    padding: 40px 40px;
+  }
+
+  .reasons--grey:nth-of-type(2) .reasons-brief {
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
 @media #{$desktop-widths} {
   .reasons-brief {
-    width: 400px;
+    padding: 40px 40px;
+  }
+
+  .reasons-brief--blue {
+    padding: 50px 60px;
+  }
+
+  .reasons-brief--blue .reasons-brief__paragraph {
+    padding: 0 20px;
+  }
+
+  .reasons--grey:nth-of-type(2) .reasons-brief__paragraph {
+    padding: 0 30px;
   }
 }

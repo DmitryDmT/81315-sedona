@@ -1,9 +1,9 @@
 .main-footer {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
   margin-top: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .main-footer__hash-tag {
@@ -12,11 +12,18 @@
   line-height: 26px;
 }
 
+@media #{$mobile-widths-only} {
+  .main-footer__hash-tag {
+    margin-bottom: 37px;
+  }
+}
+
 @media #{$tablet-widths} {
   .main-footer {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-around;
-    margin: 0;
+    padding-bottom: 36px;
+    margin-bottom: 0;
   }
 }

@@ -1,3 +1,83 @@
 .reasons-text__head {
+  font-size: 18px;
+  line-height: 26px;
   color: #000000;
+}
+
+@media #{$mobile-widths-only} {
+  .reasons-text-block {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+
+  .reasons-text-info {
+    margin-left: 30px;
+    padding-right: 50px;
+  }
+
+  .reasons-text-block__svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .reasons-text-block svg {
+    position: absolute;
+    top: -9px;
+    left: 0;
+  }
+
+  .reasons-text-house svg {
+    min-width: 39px;
+    height: 37px;
+  }
+
+  .reasons-text-souvenir svg {
+    top: -10px;
+    min-width: 32px;
+    height: 38px;
+  }
+
+  .reasons-text-food svg {
+    top: -5px;
+    min-width: 40px;
+    height: 35px;
+  }
+}
+
+@media #{$tablet-widths} {
+  .reasons-text-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 33.3%;
+    text-align: center;
+  }
+
+  .reasons-text-info {
+    padding: 0 35px;
+  }
+
+  .reasons-text-souvenir {
+    order: 1;
+  }
+
+  .reasons-text-block svg {
+    position: relative;
+    top: -20px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .reasons-text-house .reasons-text__paragraph {
+    padding: 0 30px;
+  }
+
+  .reasons-text-food .reasons-text__paragraph {
+    padding: 0 30px;
+  }
 }

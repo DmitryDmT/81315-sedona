@@ -11,25 +11,30 @@
 
 .photo-block__picture-1 {
   background-color: #feeca9;
-  background-image: url("../../img/photo-sunset-mobile@1x.jpg");
+  background-image: url("../img/photo-sunset-mobile@1x.jpg");
 }
 
 .photo-block__picture-2 {
   background-color: #e4dfc1;
-  background-image: url("../../img/photo-cactus-mobile@1x.jpg");
+  background-image: url("../img/photo-cactus-mobile@1x.jpg");
 }
 
 .photo-block__picture-3 {
   background-color: #46623d;
-  background-image: url("../../img/photo-roads-mobile@1x.jpg");
+  background-image: url("../img/photo-roads-mobile@1x.jpg");
 }
 
 .photo-block__picture-4 {
   background-color: #dea893;
-  background-image: url("../../img/photo-bridge-mobile@1x.jpg");
+  background-image: url("../img/photo-bridge-mobile@1x.jpg");
+}
+
+.photo-block__text-info {
+  margin-bottom: 6px;
 }
 
 .photo-block__index {
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 24px;
   color: #000000;
@@ -52,28 +57,81 @@
   color: #000000;
 }
 
-@media #{$tablet-widths} {
-  .photo-block--wide-condition {
-    width: 648px;
+.photo-block__like-button {
+  margin-right: 15px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+@media #{$mobile-widths-only} {
+  .photo-block {
+    padding: 22px 20px;
+    border-bottom: 1px solid #e5e5e5;
   }
 
   .photo-block__picture {
-    width: 324px;
+    margin: 0 auto;
+  }
+
+  .photo-block__under-info {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .photo-block__like-button {
+    opacity: 0.3;
+  }
+}
+
+@media #{$tablet-widths} {
+  .photo-block {
+    width: 50%;
+  }
+
+  .photo-block--wide-condition {
+    width: 100%;
+  }
+
+  .photo-block__picture {
+    width: auto;
     height: 267px;
   }
 
   .photo-block--wide-picture {
-    width: 648px;
+    width: auto;
     height: 400px;
   }
 
   .photo-block__under-info {
     display: flex;
     justify-content: space-between;
+    height: 80px;
+    padding-right: 27px;
+    padding-left: 20px;
+    background-color: #f2f2f2;
+  }
+
+  .photo-block__likes {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .photo-block__like-button {
+    margin-right: 10px;
+  }
+
+  .photo-block-north-road .photo-block__under-info {
+    background-color: #eaeaea;
   }
 }
 
 @media #{$desktop-widths} {
+  .photo-block {
+    position: relative;
+    width: 400px;
+  }
+
   .photo-block--wide-condition {
     width: 1200px;
   }
@@ -85,5 +143,43 @@
 
   .photo-block--wide-picture {
     width: 1200px;
+  }
+
+  .photo-block__under-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background: none;
+  }
+
+  .photo-block__likes {
+    position: relative;
+    margin-right: 40px;
+  }
+
+  .photo-block__index {
+    color: #ffffff;
+  }
+
+  .photo-block-north-road .photo-block__under-info {
+    background: none;
+  }
+
+  .photo-block__opacity-layer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+    opacity: 0.3;
+  }
+
+  .photo-block__like-button svg {
+    fill: #ffffff;
+  }
+
+  .photo-block__likes--number {
+    color: #ffffff;
   }
 }

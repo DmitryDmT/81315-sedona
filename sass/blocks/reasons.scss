@@ -1,41 +1,78 @@
-.reasons {
-  display: flex;
-  flex-direction: column;
+.reasons--grey {
+  background-color: #eeeeee;
 }
 
 .reasons-1__img {
-  width: 320px;
-  height: 260px;
   background-color: #f8e5e1;
-  background-image: url("../../img/main-city-mobile@1x.jpg");
+  background-image: url("../img/main-city-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 .reasons-2__img {
-  width: 320px;
-  height: 260px;
   background-color: #dea893;
-  background-image: url("../../img/main-bridge-mobile@1x.jpg");
+  background-image: url("../img/main-bridge-mobile@1x.jpg");
   background-repeat: no-repeat;
+}
+
+@media #{$mobile-widths-only} {
+  .reasons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reasons__img {
+    width: auto;
+    height: 260px;
+  }
+
+  .reasons--first {
+    position: relative;
+  }
+
+  .reasons--first-triangl {
+    position: absolute;
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+  }
+
+  .reasons-brief__head br {
+    display: none;
+  }
 }
 
 @media #{$tablet-widths} {
   .reasons {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .reasons__img {
+    flex-grow: 1;
+    height: 256px;
   }
 
   .reasons:nth-of-type(2n) .reasons__img {
     order: -1;
   }
 
-  .reasons__img {
-    width: 512px;
+  .reasons-row {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 @media #{$desktop-widths} {
+  .reasons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .reasons__img {
-    width: 800px;
+    min-width: 800px;
   }
 }

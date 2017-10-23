@@ -1,14 +1,14 @@
 .map {
-  width: 320px;
+  width: auto;
   height: 350px;
   background-color: #d1d9cf;
-  background-image: url("../../img/bg-map-mobile@1x.jpg");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
 }
 
 @media #{$tablet-widths} {
   .map {
-    width: 768px;
+    width: auto;
   }
 }
 
