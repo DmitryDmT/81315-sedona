@@ -4,14 +4,10 @@
 
 .reasons-1__img {
   background-color: #f8e5e1;
-  background-image: url("../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
 }
 
 .reasons-2__img {
   background-color: #dea893;
-  background-image: url("../img/main-bridge-mobile@1x.jpg");
-  background-repeat: no-repeat;
 }
 
 @media #{$mobile-widths-only} {
@@ -31,10 +27,11 @@
 
   .reasons--first-triangl {
     position: absolute;
-    width: 320px;
-    height: 37px;
-    background-image: url("../img/bg-triangle.svg");
-    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  .reasons--first-triangl svg {
+    width: 100%;
   }
 
   .reasons-brief__head br {
@@ -48,10 +45,16 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
+    width: 100%;
   }
 
   .reasons__img {
     flex-grow: 1;
+    
+    height: 256px;
+  }
+
+  .reasons_img-img {
     height: 256px;
   }
 
