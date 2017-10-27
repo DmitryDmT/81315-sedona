@@ -8,7 +8,7 @@
   }
 
   .main-navigation {
-    display: none;
+    display: block;
   }
 
   .main-navigation__list-item {
@@ -90,6 +90,10 @@
 
   .main-navigation--opened {
     display: block;
+  }
+
+  .main-navigation--closed {
+    display: none;
   }
 }
 
