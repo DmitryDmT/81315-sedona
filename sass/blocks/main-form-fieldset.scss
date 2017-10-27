@@ -124,6 +124,14 @@
   background-color: #f2f2f2;
 }
 
+.main-form-total-exp__input + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.main-form-total-exp__input + label:active::before {
+  background-color: #d5d5d5;
+}
+
 .main-form-total-exp__input:checked + label::after {
   content: "";
   position: absolute;
@@ -133,6 +141,10 @@
   height: 22px;
   border-radius: 50%;
   background-color: #333333;
+}
+
+.main-form-total-exp__input:checked + label:active::after {
+  opacity: 0.3;
 }
 
 .main-form-total-exp__input-label:last-of-type {
@@ -172,12 +184,28 @@
   background-color: #f2f2f2;
 }
 
-.main-form-visited-place__input:checked + label::before {
+.main-form-visited-place__input + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.main-form-visited-place__input + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.main-form-visited-place__input:checked + label::after {
   content: "";
   position: absolute;
+  top: 10px;
+  left: 0;
+  width: 56px;
+  height: 56px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.main-form-visited-place__input:checked + label:active::after {
+  opacity: 0.3;
 }
 
 .main-form-visited-place__input-label:last-of-type {
@@ -198,6 +226,17 @@
   line-height: 26px;
   font-weight: bold;
   color: #000000;
+}
+
+.main-form input:hover,
+.main-form textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.main-form input:focus,
+.main-form textarea:focus {
+  outline: 4px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 @media #{$mobile-widths-only} {

@@ -24,7 +24,8 @@
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
-  @media (min-resolution: 144dpi), (min-resolution: 1.5ddpx) {
+  
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video-mobile@2x.jpg");
     background-position: center 100%;
   }
@@ -87,6 +88,14 @@
     fill: #5c6870;
   }
 
+  .video-block__button:hover svg {
+    fill: #333333;
+  }
+
+  .video-block__button:active svg {
+    opacity: 0.3;
+  }
+
   .video-block__replay .video-block__button {
     left: 25px;
   }
@@ -121,7 +130,8 @@
     width: 648px;
     height: 500px;
     background-image: url("../img/video-tablet@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5ddpx) {
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-tablet@2x.jpg");
       background-position: center 100%;
     }
@@ -205,7 +215,8 @@
     width: 800px;
     height: 500px;
     background-image: url("../img/video-desktop@1x.jpg");
-    @media (min-resolution: 144dpi), (min-resolution: 1.5ddpx) {
+    
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-desktop@2x.jpg");
       background-position: center 100%;
     }
