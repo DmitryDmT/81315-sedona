@@ -15,6 +15,10 @@
   }
 }
 
+.helper {
+  width: 100%;
+}
+
 .reasons-2__img {
   background-color: #dea893;
   background-image: url("../img/main-bridge-mobile@1x.jpg");
@@ -50,7 +54,6 @@
 //    position: absolute;
 //    top: 0;
 //    left: 0;
-//    
 //  }
 
   .reasons-brief__head br {
@@ -61,7 +64,7 @@
 @media #{$tablet-widths} {
   .reasons--first-triangl {
     background-image: none;
-  } 
+  }
 
   .reasons {
     display: flex;
@@ -73,7 +76,6 @@
 
   .reasons__img {
     flex-grow: 1;
-    
     height: 256px;
   }
 
