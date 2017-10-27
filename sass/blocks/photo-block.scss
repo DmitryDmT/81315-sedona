@@ -4,29 +4,20 @@
 }
 
 .photo-block__picture {
-  width: 280px;
-  height: 280px;
+  background-color: #dea893;
   background-repeat: no-repeat;
-}
-
-.photo-block__picture-1 {
-  background-color: #feeca9;
-  background-image: url("../img/photo-sunset-mobile@1x.jpg");
 }
 
 .photo-block__picture-2 {
   background-color: #e4dfc1;
-  background-image: url("../img/photo-cactus-mobile@1x.jpg");
 }
 
 .photo-block__picture-3 {
   background-color: #46623d;
-  background-image: url("../img/photo-roads-mobile@1x.jpg");
 }
 
 .photo-block__picture-4 {
   background-color: #dea893;
-  background-image: url("../img/photo-bridge-mobile@1x.jpg");
 }
 
 .photo-block__text-info {
@@ -72,6 +63,8 @@
 
   .photo-block__picture {
     margin: 0 auto;
+    width: 280px;
+    height: 280px;
   }
 
   .photo-block__under-info {
@@ -86,21 +79,20 @@
 
 @media #{$tablet-widths} {
   .photo-block {
-    width: 50%;
+    width: 324px;
   }
 
   .photo-block--wide-condition {
-    width: 100%;
+    width: 648px;
   }
 
   .photo-block__picture {
-    width: auto;
-    height: 267px;
+    width: 100%;
+    margin-bottom: -6px;
   }
 
-  .photo-block--wide-picture {
-    width: auto;
-    height: 400px;
+  .photo-block__picture--img {
+    width: 100%;
   }
 
   .photo-block__under-info {
@@ -134,11 +126,13 @@
 
   .photo-block--wide-condition {
     width: 1200px;
+    height: 400px;
   }
 
   .photo-block__picture {
     width: 400px;
     height: 267px;
+    margin-bottom: 0;
   }
 
   .photo-block--wide-picture {

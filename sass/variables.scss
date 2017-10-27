@@ -2,6 +2,8 @@
 $tablet-widths: (min-width: 768px);
 $desktop-widths: (min-width: 1200px);
 $mobile-widths-only: (max-width: 767px);
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 /* Для стилей ссылок */
 $hover-style: #669ec0;

@@ -14,7 +14,8 @@
   .gallery-block {
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 60px;
+    width: 648px;
+    margin: 0 auto;
     margin-bottom: 60px;
   }
 }
@@ -23,6 +24,7 @@
   .gallery-block {
     flex-direction: row;
     flex-wrap: wrap;
+    width: auto;
     padding: 0;
     margin: 0;
     margin-bottom: 60px;
