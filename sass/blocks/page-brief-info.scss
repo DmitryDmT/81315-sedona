@@ -5,6 +5,7 @@
 }
 
 .page-brief-info__head {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -47,6 +48,11 @@
   .page-brief-info--other-pa {
     padding: 0 165px;
   }
+
+  .page-brief-info__head-other {
+  font-size: 30px;
+  line-height: 39px;
+}
 }
 
 @media #{$desktop-widths} {
