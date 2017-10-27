@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <title>Фото «Sedona»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/picturefill.js" async></script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js"></script>
   </head>
   <body class="page-body">
     <div class="container">
@@ -16,7 +20,7 @@
               <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="main-navigation__list-item  main-navigation__list-item--now">
-              <a class="main-navigation__link" href="#">Фото и видео<span class="main-navigation__link--active"></span></a>
+              <a class="main-navigation__link  main-navigation__link--now" href="#">Фото и видео<span class="main-navigation__link--active"></span></a>
             </li>
           </ul>
           <div class="main-header__logo-nav-tablet">
@@ -43,7 +47,16 @@
           <button class="header-button" type="button">Открыть меню</button>
           <button class="header-button-up" type="button">Закрыть меню</button>
         </div>
-        <div class="main-header__img  main-header__img-other-pages"></div>
+        <div class="main-header__img  main-header__img-other-pages">
+          <img class="main-header__text-index  main-header__text-other" src="img/text-sedona.svg">
+          <div class="main-header__triangle">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg">
+            </picture>
+          </div>
+        </div>
       </header>
       <main class="main-block">
         <section class="page-brief-info  page-brief-info--other-p">
@@ -56,7 +69,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <img class="photo-block__picture--img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                <img class="photo-block__picture--img" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
               </picture>
             </div>
             <div class="photo-block__opacity-layer"></div>
@@ -88,7 +101,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                <img class="photo-block__picture--img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x">
+                <img class="photo-block__picture--img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
               </picture>
             </div>
             <div class="photo-block__opacity-layer"></div>
@@ -120,7 +133,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                <img class="photo-block__picture--img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x">
+                <img class="photo-block__picture--img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на Север">
               </picture>
             </div>
             <div class="photo-block__opacity-layer"></div>
@@ -152,7 +165,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="photo-block__picture--img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x">
+                <img class="photo-block__picture--img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола">
               </picture>
             </div>
             <div class="photo-block__opacity-layer"></div>

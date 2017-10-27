@@ -27,7 +27,7 @@
           </div>
           <ul class="main-navigation__list  main-navigation__list-2">
             <li class="main-navigation__list-item  main-navigation__list-item--now">
-              <a class="main-navigation__link" href="#">Форма отзыва<span class="main-navigation__link--active"></span></a>
+              <a class="main-navigation__link  main-navigation__link--now" href="#">Форма отзыва<span class="main-navigation__link--active"></span></a>
             </li>
             <li class="main-navigation__list-item">
               <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
@@ -43,7 +43,16 @@
           <button class="header-button" type="button">Открыть меню</button>
           <button class="header-button-up" type="button">Закрыть меню</button>
         </div>
-        <div class="main-header__img  main-header__img-other-pages"></div>
+        <div class="main-header__img  main-header__img-other-pages">
+          <img class="main-header__text-index  main-header__text-other" src="img/text-sedona.svg">
+          <div class="main-header__triangle">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg">
+            </picture>
+          </div>
+        </div>
       </header>
       <main class="main-block">
         <section class="page-brief-info  page-brief-info--other-pa">

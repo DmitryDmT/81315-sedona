@@ -79,11 +79,11 @@
 
 @media #{$tablet-widths} {
   .photo-block {
-    width: 50%;
+    width: 324px;
   }
 
   .photo-block--wide-condition {
-    width: 100%;
+    width: 648px;
   }
 
   .photo-block__picture {
@@ -126,6 +126,7 @@
 
   .photo-block--wide-condition {
     width: 1200px;
+    height: 400px;
   }
 
   .photo-block__picture {
