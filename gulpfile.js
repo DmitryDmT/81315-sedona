@@ -78,17 +78,13 @@ gulp.task("webp", function() {
     .pipe(gulp.dest("img"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: ".",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
+    server: "build/",
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html"]);
 });
 
 gulp.task("build", function(done) {
