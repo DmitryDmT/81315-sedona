@@ -22,7 +22,7 @@
 }
 
 .reasons-brief__count {
-  padding-top: 7px;
+  padding-top: 8px;
 }
 
 .reasons-brief__count-b {
@@ -38,7 +38,7 @@
 
 @media #{$mobile-widths-only} {
   .reasons-brief {
-    padding-top: 29px;
+    padding-top: 25px;
   }
 
   .reasons-brief--blue {
@@ -51,18 +51,22 @@
 
   .reasons:nth-of-type(1) .reasons-brief--blue {
     position: relative;
-    padding-top: 18.1%;
+    padding-top: 80px;
     padding-right: 28px;
     padding-left: 28px;
   }
 
-  .reasons--grey .reasons-brief {
+  .reasons-brief--grey {
     padding-left: 15px;
     padding-bottom: 15px;
     padding-right: 15px;
     margin-left: 20px;
     margin-right: 20px;
     border-bottom: 1px solid #d6d6d6;
+  }
+
+  .reasons-brief--grey .reasons-brief__paragraph {
+    margin-top: 16px;
   }
 
   .reasons-brief__head {

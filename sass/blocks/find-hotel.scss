@@ -12,15 +12,24 @@
 
 .find-hotel__paragraph {
   padding: 0 10px;
-  margin-bottom: 30px;
+  margin-top: 19px;
+  margin-bottom: 35px;
   font-size: 14px;
   line-height: 24px;
 }
 
+.find-hotel__btn {
+  padding: 16px 0;
+  margin: 0 20px;
+}
+
 @media #{$mobile-widths-only} {
   .find-hotel {
-    padding: 0 6%;
     margin-bottom: 49px;
+  }
+
+  .find-hotel__paragraph {
+    padding: 0 15px;
   }
 }
 
