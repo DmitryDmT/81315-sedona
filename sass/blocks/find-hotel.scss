@@ -5,28 +5,40 @@
 }
 
 .find-hotel__head {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
 }
 
 .find-hotel__paragraph {
-  padding: 0 10px;
-  margin-bottom: 30px;
+  margin-top: 19px;
+  margin-bottom: 35px;
   font-size: 14px;
   line-height: 24px;
 }
 
 @media #{$mobile-widths-only} {
   .find-hotel {
-    padding: 0 6%;
     margin-bottom: 49px;
+  }
+
+  .find-hotel__paragraph {
+    padding: 0 15px;
+  }
+
+  .find-hotel__paragraph br {
+    display: none;
+  }
+
+  .find-hotel__btn {
+    padding: 16px 0;
+    margin: 0 20px;
   }
 }
 
 @media #{$tablet-widths} {
   .find-hotel {
-    width: 460px;
-    margin: 0 auto;
+    margin: 0 155px;
     margin-bottom: 58px;
   }
 

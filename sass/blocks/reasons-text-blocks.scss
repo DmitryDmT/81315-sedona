@@ -1,4 +1,5 @@
 .reasons-text__head {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
@@ -27,7 +28,6 @@
   .reasons-text-block svg {
     position: absolute;
     top: -9px;
-    left: 0;
   }
 
   .reasons-text-house svg {
@@ -54,8 +54,20 @@
     display: flex;
     flex-direction: column;
     margin-top: 25px;
-    width: 33.3%;
+    width: 33%;
     text-align: center;
+  }
+
+  .reasons-text__head {
+    display: block;
+    margin-left: 7px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .reasons-text__paragraph {
+    padding: 0 10px;
+    margin-top: 23px;
   }
 
   .reasons-text-info {
