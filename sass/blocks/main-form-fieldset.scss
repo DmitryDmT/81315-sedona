@@ -7,7 +7,7 @@
   flex-direction: column;
   padding: 0;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
   border-top: 1px solid #e5e5e5;
 }
@@ -31,6 +31,7 @@
 }
 
 .main-form__head-fieldset {
+  margin-top: 23px;
   margin-bottom: 23px;
   text-align: center;
   font-family: "PT Sans Bold", "Arial", sans-serif;
@@ -39,11 +40,15 @@
   font-weight: bold;
 }
 
+.main-form-introduce__head-fieldset {
+  margin-top: 20px;
+}
+
 .main-form-introduce__input-label {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .main-form-introduce__input-label:last-of-type {
@@ -93,6 +98,10 @@
   left: 21px;
 }
 
+.main-form-contact-info__head-fieldset {
+  margin-top: 33px;
+}
+
 .label-tel-word {
   margin-left: 22px;
 }
@@ -107,7 +116,7 @@
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 79px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -156,6 +165,11 @@
 
 .main-form-visited-place__head-fieldset {
   margin-bottom: 10px;
+}
+
+.main-form-total-exp__head-fieldset {
+  margin-top: 28px;
+  margin-bottom: 15px;
 }
 
 .main-form-visited-place__input {
@@ -244,6 +258,30 @@
   background-color: #ffffff;
 }
 
+.main-form-contact-info {
+  padding-bottom: 10px;
+}
+
+.main-form-total-exp__head-fieldset {
+  margin-top: 15px;
+}
+
+.main-form-total-exp {
+  padding-bottom: 20px;
+}
+
+.main-form-visited-place__head-fieldset {
+  margin-bottom: 3px;
+}
+
+.main-form-visited-place {
+  padding-bottom: 10px;
+}
+
+.main-form-emotions__head-fieldset {
+  margin-bottom: 13px;
+}
+
 @media #{$mobile-widths-only} {
   .main-form-visited__wrapper:nth-of-type(1) .main-form-visited-place__input-label:last-of-type {
     margin-bottom: 5px;
@@ -285,7 +323,7 @@
 
   .main-form-visited-place {
     width: 100%;
-    margin-top: 65px;
+    margin-top: 55px;
     margin-bottom: 25px;
   }
 
@@ -360,6 +398,33 @@
     margin-bottom: 45px;
     background-color: #ffffff;
   }
+
+  .main-form-total-exp__input + label {
+    margin-bottom: 10px;
+  }
+
+  .main-form-contact-info {
+    margin-top: 55px;
+  }
+
+  .main-form-visited-place {
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+
+  .main-form-emotions__head-fieldset {
+    margin-bottom: 50px;
+  }
+
+  .main-form__send-require-wrapper {
+    margin-top: 60px;
+  }
+
+  .main-form__require-state {
+    display: block;
+    margin-top: 15px;
+  }
 }
 
 @media #{$desktop-widths} {
@@ -388,12 +453,14 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 25px;
+    margin-top: 40px;
   }
 
   .main-form-contact-info__input-label {
     flex-direction: row;
     align-items: baseline;
+    margin-left: -20px;
+    margin-right: 20px;
   }
 
   .main-form-contact-info__input-label-svg {
@@ -443,5 +510,9 @@
 
   .main-form-total-exp__head-fieldset {
     text-align: center;
+  }
+
+  .main-form-visited-place {
+    margin-top: 40px;
   }
 }

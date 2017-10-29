@@ -28,3 +28,14 @@
     margin-bottom: 0;
   }
 }
+
+@media #{$desktop-widths} {
+  .main-footer {
+    justify-content: space-between;
+    margin-top: 37px;
+  }
+
+  .main-footer__hash-tag {
+    margin-left: 130px;
+  }
+}

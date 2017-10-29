@@ -122,11 +122,17 @@
   }
 
   .reasons-brief--blue {
-    padding: 50px 60px;
+    padding: 47px 60px;
+    padding-top: 51px;
   }
 
   .reasons-brief--blue .reasons-brief__paragraph {
     padding: 0 20px;
+  }
+
+  .reasons-brief--grey {
+    padding-top: 45px;
+    padding-bottom: 50px;
   }
 
   .reasons--grey:nth-of-type(2) .reasons-brief__paragraph {

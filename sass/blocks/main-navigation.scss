@@ -158,6 +158,16 @@
 }
 
 @media #{$desktop-widths} {
+  .main-navigation__list-1 {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .main-navigation__list-2 {
+    margin-left: 70px;
+    margin-right: 55px;
+  }
+
   .main-header__logo-nav-tablet img {
     width: 187px;
     height: 97px;

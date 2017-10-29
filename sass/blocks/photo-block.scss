@@ -42,7 +42,7 @@
   display: flex;
 }
 
-.photo-block__likes--number {
+.photo-block__likes-number {
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -77,6 +77,14 @@
   .photo-block__like-button {
     opacity: 0.3;
   }
+
+  .photo-block-north-road {
+    padding-top: 15px;
+  }
+
+  .photo-block-bridge-devil {
+    padding-top: 17px;
+  }
 }
 
 @media #{$tablet-widths} {
@@ -84,7 +92,7 @@
     width: 324px;
   }
 
-  .photo-block--wide-condition {
+  .photo-block__picture--wide-condition {
     width: 648px;
   }
 
@@ -93,7 +101,7 @@
     margin-bottom: -6px;
   }
 
-  .photo-block__picture--img {
+  .photo-block__picture-first--img {
     width: 100%;
   }
 
@@ -137,7 +145,7 @@
     margin-bottom: 0;
   }
 
-  .photo-block--wide-picture {
+  .photo-block__picture--wide-picture {
     width: 1200px;
   }
 

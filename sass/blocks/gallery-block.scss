@@ -6,6 +6,8 @@
 
 @media #{$mobile-widths-only} {
   .gallery-block {
+    padding-top: 20px;
+    margin-bottom: 28px;
     border-top: 1px solid #e5e5e5;
   }
 }
@@ -16,6 +18,7 @@
     flex-wrap: wrap;
     width: 648px;
     margin: 0 auto;
+    margin-top: 10px;
     margin-bottom: 60px;
   }
 }

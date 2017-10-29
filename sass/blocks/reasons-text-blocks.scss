@@ -5,6 +5,10 @@
   color: #000000;
 }
 
+.reasons-text__paragraph br {
+  display: none;
+}
+
 @media #{$mobile-widths-only} {
   .reasons-text-block {
     position: relative;
@@ -85,11 +89,23 @@
 }
 
 @media #{$desktop-widths} {
+  .reasons-text__paragraph br {
+    display: block;
+  }
+
   .reasons-text-house .reasons-text__paragraph {
     padding: 0 30px;
   }
 
   .reasons-text-food .reasons-text__paragraph {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+
+  .reasons-text-souvenir-info {
+    margin-left: 10px;
+  }
+
+  .reasons-text-souvenir svg {
+    left: 10px;
   }
 }

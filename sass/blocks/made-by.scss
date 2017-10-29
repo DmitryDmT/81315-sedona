@@ -26,3 +26,9 @@
     fill: rgba(0, 0, 0, 0.3);
   }
 }
+
+@media #{$desktop-widths} {
+  .made-by {
+    margin-right: 45px;
+  }
+}

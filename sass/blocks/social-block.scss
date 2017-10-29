@@ -40,3 +40,9 @@
     margin-bottom: 33px;
   }
 }
+
+@media #{$desktop-widths} {
+  .social-block {
+    margin-left: -100px;
+  }
+}

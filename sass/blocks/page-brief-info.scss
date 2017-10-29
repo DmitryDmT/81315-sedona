@@ -19,10 +19,12 @@
 
 .page-brief-info--other-p {
   padding: 0 25px;
+  margin-top: -4px;
 }
 
 .page-brief-info--other-pa {
   padding: 0 20px;
+  margin-top: -5px
 }
 
 @media #{$tablet-widths} {
@@ -33,7 +35,19 @@
 
   .page-brief-info--other-p {
     padding: 0 170px;
+    margin-top: 55px;
     margin-bottom: 40px;
+  }
+
+  .page-brief-info--other-p .page-brief-info__head {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .page-brief-info--other-p .page-brief-info__paragraph {
+    padding: 0 80px;
+    margin-top: 25px;
+    margin-bottom: 35px;
   }
 
   .page-brief-info__head {
@@ -42,11 +56,12 @@
   }
 
   .page-brief-info__paragraph {
-    margin-top: 25px;
+    margin-top: 23px;
   }
 
   .page-brief-info--other-pa {
     padding: 0 165px;
+    margin-top: 20px;
   }
 
   .page-brief-info__head-other {
@@ -58,10 +73,18 @@
 @media #{$desktop-widths} {
   .page-brief-info {
     padding: 0 300px;
+    margin-bottom: 36px;
   }
 
   .page-brief-info--other-pa {
-    margin-bottom: 10px;
+    padding: 0 380px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+  }
+
+  .page-brief-info--other-pa .page-brief-info__head {
+    font-size: 30px;
+    line-height: 39px;
   }
 
   .page-brief-info__head {
@@ -70,8 +93,12 @@
   }
 
   .page-brief-info__paragraph {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .page-brief-info--other-pa .page-brief-info__paragraph {
+    margin-top: 25px;
   }
 }
