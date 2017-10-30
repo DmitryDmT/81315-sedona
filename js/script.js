@@ -4,7 +4,6 @@ var btnOpenedMenu = document.querySelector(".header-button-up");
 var menuItemActive = menu.querySelector(".main-navigation__link--now");
 var menuItemCross = menu.querySelector(".main-navigation__link--active");
 
-
 // menu.classList.add("main-navigation--closed");
 
 btnClosedMenu.addEventListener("click", function(evt) {
